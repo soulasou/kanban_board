@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+*{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+body {
+  background-color: grey;
+}
+
+.board {
+  min-height: 500px;
+  min-width: 500px;
+  background-color: grey;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+.column-title {
+	text-align: center;
+	color: white;
+}
+
+.column-container {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.column {
+  order: 1;
+  display: block;
+  height: 400px;
+  width: 500px;
+  background-color: #ab8db7;
+  position: relative;
+  margin: 5px;
+  margin-top: 50px;
+
+}
+
+.card {
+	list-style: none;
+	background-color: #85708e;
+	margin-right: 50px;
+	cursor: pointer;
+	font-weight: 700;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.card:hover{
+	transform: scale(1.1, 1.1);
+	transition: ease-in-out 0.3s;
+}
+
+button.btn-delete {
+	float: right;
+	position: absolute;
+  right: 0;
+  top: 0;
+}
+
+button.create-column,
+button.add-card {
+	background-color: white;
+	cursor:pointer;
+}
