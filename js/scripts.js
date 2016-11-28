@@ -97,8 +97,8 @@ var board = {
     addColumn: function(column) {
       this.$element.append(column.$element);
      function initSortable() {
-      $('.column-card-list').sortable({
-          connectWith: '.column-card-list',
+      $('.column-list').sortable({
+          connectWith: '.column-list',
           placeholder: 'card-placeholder'
       }).disableSelection();
       };
@@ -106,6 +106,7 @@ var board = {
     },
     $element: $('#board .column-container')
 };
+
 $('.create-column')
   .click(function(){
   var name = prompt('Wpisz nazwę kolumny');
